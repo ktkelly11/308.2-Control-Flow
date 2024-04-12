@@ -52,6 +52,7 @@ if (plantAreaWeek1 >= area * 0.8) {
 } else {
   console.log("There is room for more plants");
 }
+// "There is room for more plants"
 
 if (plantAreaWeek2 >= area * 0.8) {
   console.log("Time to Prune!");
@@ -60,6 +61,7 @@ if (plantAreaWeek2 >= area * 0.8) {
 } else {
   console.log("There is room for more plants");
 }
+// "There is room for more plants"
 
 if (plantAreaWeek3 >= area * 0.8) {
   console.log("Time to Prune!");
@@ -68,3 +70,39 @@ if (plantAreaWeek3 >= area * 0.8) {
 } else {
   console.log("There is room for more plants!");
 }
+// "Time to prune!"
+
+let plantsWeek2andAHalf = plantsWeek2 + plantsWeek1 / 2;
+console.log(plantsWeek2andAHalf);
+// 50 plants
+
+const plantAreaWeek2andAHalf = plantArea * plantsWeek2andAHalf;
+console.log(plantAreaWeek2andAHalf);
+// 40 meters
+
+if (plantAreaWeek2andAHalf >= area * 0.8) {
+  console.log("Time to Prune!");
+} else if (
+  plantAreaWeek2andAHalf > area * 0.5 &&
+  plantAreaWeek2andAHalf < area * 0.8
+) {
+  console.log("Monitor the plants!");
+} else {
+  console.log("There is room for more plants!");
+}
+// "Monitor the plants!"
+
+// Part 2: Thinking Bigger
+const newPlants = 100;
+
+const newPlantsWeek2 = newPlants * 2;
+console.log(newPlantsWeek2);
+// 200 plants
+
+const newPlantsWeek3 = newPlantsWeek2 * 2;
+console.log(newPlantsWeek3);
+// 400 plants
+
+const newPlantsWeek4 = newPlantsWeek3 * 2;
+console.log(newPlantsWeek4);
+// 800 plants
