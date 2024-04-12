@@ -49,8 +49,7 @@ if (plantAreaWeek1 >= area * 0.8) {
   console.log("Time to Prune!");
 } else if (plantAreaWeek1 > area * 0.5 && plantAreaWeek1 < area * 0.8) {
   console.log("Monitor the plants!");
-} else plantAreaWeek1 < area * 0.5;
-{
+} else {
   console.log("There is room for more plants");
 }
 
@@ -58,16 +57,14 @@ if (plantAreaWeek2 >= area * 0.8) {
   console.log("Time to Prune!");
 } else if (plantAreaWeek2 > area * 0.5 && plantAreaWeek2 < area * 0.8) {
   console.log("Monitor the plants!");
-} else plantAreaWeek2 < area * 0.5;
-{
+} else {
   console.log("There is room for more plants");
 }
 
 if (plantAreaWeek3 >= area * 0.8) {
   console.log("Time to Prune!");
-} else if (plantAreaWeek3 > area * 0.5 || plantAreaWeek3 < area * 0.8) {
+} else if (plantAreaWeek3 > area * 0.5 && plantAreaWeek3 < area * 0.8) {
   console.log("Monitor the plants!");
-} else plantAreaWeek3 < area * 0.5;
-{
-  console.log("There is room for more plants");
+} else {
+  console.log("There is room for more plants!");
 }
