@@ -29,6 +29,15 @@ console.log(plantArea * plantsWeek2);
 // Week #3
 let plantsWeek3 = plantsWeek2 * 2;
 console.log(plantsWeek3);
+// 80 plants
 
 console.log(plantArea * plantsWeek3);
 // 51.20 meters
+
+// Week 4
+let plantsWeek4 = plantsWeek3 * 2;
+console.log(plantsWeek4);
+// 160 plants
+
+console.log(plantArea * plantsWeek4);
+// 102.40 meters (has exceeded the total area of 78.54 meters)
