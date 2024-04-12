@@ -130,3 +130,34 @@ console.log(newPlantsWeek9);
 const newPlantsWeek10 = newPlantsWeek9 * 2;
 console.log(newPlantsWeek10);
 // 51200 plants
+
+// Failed loop to figure out number of new plants
+// let weeks = 10;
+// let weekPlants = 100;
+
+// while (week <= 10) {
+//   if ((weekPlants * weekPlants) ** 10) {
+//     console.log();
+//   }
+//   week++;
+// }
+
+const plantSpace = newPlantsWeek10 * plantArea;
+console.log(plantSpace);
+// They need 40,960 meters of space
+
+const spaceDifference = plantSpace - area;
+console.log(spaceDifference);
+// The difference in space between the new garden and the last garden is 40881.46 meters
+
+// area = PI * r * r
+// spaceDifference = PI * r * r;
+// spaceDifference/PI = r * r
+const newArea = spaceDifference / PI;
+console.log(newArea);
+// 13013.35
+const newRadius = Math.sqrt(newArea);
+console.log(newRadius);
+// 114.08 meters
+
+// Part 3: Errors in Judgement
