@@ -145,7 +145,7 @@ console.log(newPlantsWeek10);
 let n = 100; //newPlants
 
 for (week = 1; week < 10; week++) {
-  n = n + n;
+  n = 2 * n;
 }
 console.log(n);
 // 51,200
@@ -169,7 +169,7 @@ console.log(newRadius);
 // 114.08 meters
 
 // Part 3: Errors in Judgement
-let plants = 100;
+let plants = 20;
 
 try {
   if (plants > maxPlants) {
