@@ -142,6 +142,14 @@ console.log(newPlantsWeek10);
 //   week++;
 // }
 
+let n = 100; //newPlants
+
+for (week = 1; week < 10; week++) {
+  n = n + n;
+}
+console.log(n);
+// 51,200
+
 const plantSpace = newPlantsWeek10 * plantArea;
 console.log(plantSpace);
 // They need 40,960 meters of space
@@ -161,3 +169,19 @@ console.log(newRadius);
 // 114.08 meters
 
 // Part 3: Errors in Judgement
+let plants = 100;
+
+try {
+  if (plants > maxPlants) {
+    console.log(
+      `${maxPlants} is the maximum amount of plants for the garden. That's too many plants!`
+    );
+  } else {
+    console.log(
+      `Haven't yet reached ${maxPlants} plants yet. There's still room for more`
+    );
+  }
+  plants += 1;
+} catch (err) {
+  console.log(error);
+}
